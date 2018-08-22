@@ -1,0 +1,22 @@
+[Ubuntu Install]
+sudo apt-get install php-pear
+sudo apt-get install php5-dev
+sudo pecl install channel://pecl.php.net/msgpack-0.5.7
+sudo vi /etc/php5/fpm/php.ini
+Search "Dynamic Extensions", put "extension=msgpack.so" below that block.
+sudo service php5-fpm restart
+Go to https://localhost/msgpack-test/msgpack-demo.php, if you see an array, it works.
+
+[MacOS Install]
+sudo /Applications/MAMP/bin/php/php5.6.32/bin/pecl install channel://pecl.php.net/msgpack-0.5.7
+Add "extension=msgpack.so" to php.ini, check php.ini's location on info.php
+
+[Files]
+dict-demo.php - a demo of json encode and decode.
+msgpack-demo.php - a demo of msgpack encode and decode.
+msgpack-test.php - test how much msgpack faster and smaller.
+
+[Result]
+unpack is 4 times faster
+pack is 6 times faster
+msgpack is 8% smaller

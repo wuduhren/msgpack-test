@@ -1,0 +1,16 @@
+[
+   	{
+      	"name":"Chris",
+      	"age": 26,
+      	"height": 183,
+      	"weight": 80,
+      	"hobby":["read", "write"]
+   	},
+   	{
+      	"name":"Glenn",
+      	"age": 21,
+      	"height": 170,
+      	"weight": 90,
+      	"hobby":["eat", "sleep"]
+   	}
+]
